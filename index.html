@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Juomapeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="setup">
+            <!--Setuppi-->
+        <h1>Juomapeli</h1>
+        <input id="player-input" type="text" placeholder="Pelaajan nimi" />
+        <button id="addPlayerBtn">Lisää pelaaja</button>
+
+            <div id="player-container">
+                <h2>Pelaajat:</h2>
+                <ul id="player-list"></ul>
+            </div>
+            <select id="category-select">
+            <option value="">Valitse kategoria</option>
+            </select>
+
+            <button id="start-btn" class="btn" disabled>Aloita peli</button>
+        </section>
+
+        <!-- Peli -->
+        <section id="game" style="display:none">
+            <h2 id="current-player"></h2>
+            <p id="question-text"></p>
+            <button id="next-btn" class="btn">Seuraava kysymys</button>
+        </section>
+
+        <!-- Loppu -->
+        <section id="end" style="display:none">
+            <h2>Peli päättyi!</h2>
+             <img id="end-image" src="images/game-over.png" alt="Peli päättyi" />
+             <br>
+            <button id="restart-btn" class="btn">Pelaa uudestaan</button>
+        </section>
+    </div>
+<footer class="footer">
+    <p>Juomapeli &copy; 2025 | Niklas Päri</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

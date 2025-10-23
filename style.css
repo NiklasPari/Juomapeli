@@ -1,0 +1,217 @@
+body {
+font-family: Helvetica, sans-serif;
+background-color: #f4f4f9;
+align-items: center;
+justify-content: center;
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+.container {
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    flex: 1; 
+    background: rgb(230, 230, 230);
+    margin-top: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: #b700ff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #b700ff;
+  margin-bottom: 10px;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  align-items: center;
+  background-color: #f0f0f5;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+/* Napit */
+.btn {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+  background-color: #b700ff;
+  color: #fff;
+  
+}
+.btn:hover{
+background-color:  #9b02d7;
+}
+#addPlayerBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  background-color: #b700ff;
+  color: #fff;
+  
+}
+#addPlayerBtn:hover {
+  background-color:  #9b02d7;
+}
+/* Pelaajalista */
+#player-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#player-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f5;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+#player-list li:hover {
+  background-color: #ebe1f0;
+}
+
+.removePlayer {
+  background-color: #ff1900;
+  color: #fff;
+  border: none;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.removePlayer:hover {
+  background-color: #ca1400;
+}
+  #next-btn {
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+}
+#next-btn:hover {
+  background-color:#9b02d7;
+}
+
+/* kysymykset */
+#question-text {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  min-height: 60px;
+  color: #000000;
+}
+
+#end-image {
+      margin-top: 10%;
+    width: 70%;              
+    max-width: 400px;     
+    height: auto;           
+}
+
+/* responsiivisuus */
+@media (max-width: 1080px) {
+  .container {
+    width: 95%;       
+    padding: 15px;
+    
+  }
+  input, select, .btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+ .btn {
+    font-size: 3rem;       
+        
+  }
+  #addPlayerBtn {
+    font-size: 3rem;
+    width: 100%;
+}
+  #question-text {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;  
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  #player-list li {
+    font-size: 3rem;
+  }
+  .removePlayer {
+    font-size: 1.3rem;
+  }
+  #category-select{
+    font-size: 2rem;
+  }
+  #player-input{
+    font-size: 2rem;
+  }
+  #next-btn {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%); 
+  max-width: 400px;
+  font-size: 2rem;
+}
+#restart-btn{
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%); 
+  max-width: 400px;
+  font-size: 2rem;
+}
+#end-image {
+    margin-top: 10%;
+    width: 80%;              
+    max-width: 700px;     
+    height: auto;           
+}
+
+}
+
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+}
